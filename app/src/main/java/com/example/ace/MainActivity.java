@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnLogOut=(Button) findViewById(R.id.logout_buttoin_main2);
         result=(TextView) findViewById(R.id.textView4);
-        result.setText("Welcome "+FirebaseAuth.getInstance().getCurrentUser().getEmail());
+        result.setText(" \nWELCOME: "+FirebaseAuth.getInstance().getCurrentUser().getEmail());
         auth = FirebaseAuth.getInstance();
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
